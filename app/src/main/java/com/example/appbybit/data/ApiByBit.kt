@@ -8,6 +8,6 @@ interface ApiByBit {
     @GET("/announcements/index")
     suspend fun getAnnouncementsData(
         @Query("locale") locale: String,
-        @Query("limit") limit: String,
+        @Query("limit") limit: Int,
     ): Announcements
 }
