@@ -4,7 +4,7 @@ import com.example.appbybit.data.models.Announcements
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface ApiByBit {
+interface ByBitApi {
     @GET("/announcements/index")
     suspend fun getAnnouncementsData(
         @Query("locale") locale: String,
