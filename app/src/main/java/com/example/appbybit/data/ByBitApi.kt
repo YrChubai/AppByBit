@@ -5,7 +5,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ByBitApi {
-    @GET("/announcements/index")
+    @GET("announcements/index")
     suspend fun getAnnouncementsData(
         @Query("locale") locale: String,
         @Query("limit") limit: Int,
